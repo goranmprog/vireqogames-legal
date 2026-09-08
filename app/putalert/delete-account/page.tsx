@@ -9,7 +9,8 @@ import { createSiteMetadata } from "@/lib/metadata";
 
 const app = getApp("putalert");
 const document = requireLegalDocument("putalert", "delete-account");
-const webFormEnabled = isAccountDeletionWebFormEnabled();
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = createSiteMetadata({
   title: "PUTALERT – Brisanje računa",
@@ -20,6 +21,8 @@ export const metadata: Metadata = createSiteMetadata({
 });
 
 export default function PutalertDeleteAccountPage() {
+  const webFormEnabled = isAccountDeletionWebFormEnabled();
+
   return (
     <article className="container content legal-document delete-account-content">
       <nav className="breadcrumb" aria-label="Breadcrumb">
