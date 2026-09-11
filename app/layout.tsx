@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SiteLayout } from "@/components/SiteLayout";
+import { ConditionalSiteLayout } from "@/components/ConditionalSiteLayout";
 import { siteMetadata } from "@/lib/metadata";
 import "./globals.css";
 
@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <SiteLayout>{children}</SiteLayout>
+        <ConditionalSiteLayout>{children}</ConditionalSiteLayout>
       </body>
     </html>
   );
