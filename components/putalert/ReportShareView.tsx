@@ -146,9 +146,9 @@ function ShareShell({
 
       <footer className="putalert-share-footer">
         <nav className="putalert-share-footer-links" aria-label="Legal">
-          <Link href="/putalert/privacy">Politika privatnosti</Link>
+          <Link href="/privacy">Politika privatnosti</Link>
           <span aria-hidden="true">|</span>
-          <Link href="/putalert/terms">Uslovi korištenja</Link>
+          <Link href="/terms">Uslovi korištenja</Link>
         </nav>
         <p className="putalert-share-copyright">
           © 2026 PUTALERT. Sva prava zadržana.

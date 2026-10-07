@@ -219,7 +219,7 @@ describe("createPutalertShareMetadata", () => {
   const previewImageUrl = buildPutalertShareOgImageUrl(VALID_REPORT_ID);
 
   beforeEach(() => {
-    process.env.PUTALERT_SITE_BASE_URL = "https://vireqogames-legal.vercel.app";
+    process.env.PUTALERT_SITE_BASE_URL = "https://putalert.com";
   });
 
   afterEach(() => {
@@ -235,11 +235,9 @@ describe("createPutalertShareMetadata", () => {
     expect(metadata.description).toBe(
       "Provjeri ovaj događaj u PUTALERT aplikaciji.",
     );
-    expect(metadata.alternates?.canonical).toBe(
-      `/putalert/r/${VALID_REPORT_ID}`,
-    );
+    expect(metadata.alternates?.canonical).toBe(`/r/${VALID_REPORT_ID}`);
     expect(metadata.openGraph?.url).toBe(
-      `${getPutalertSiteBaseUrl()}/putalert/r/${VALID_REPORT_ID}`,
+      `${getPutalertSiteBaseUrl()}/r/${VALID_REPORT_ID}`,
     );
     expect(getFirstOpenGraphImageUrl(metadata)).toBe(previewImageUrl);
     expect(metadata.twitter).toEqual(
@@ -294,7 +292,7 @@ describe("createPutalertShareMetadata", () => {
       "Patrolni radar — Magistralni put M16",
     );
     expect(metadata.openGraph?.url).toBe(
-      `${getPutalertSiteBaseUrl()}/putalert/r/${VALID_REPORT_ID}`,
+      `${getPutalertSiteBaseUrl()}/r/${VALID_REPORT_ID}`,
     );
     expect(getFirstOpenGraphImageUrl(metadata)).toBe(previewImageUrl);
     expect(metadata.twitter).toEqual(

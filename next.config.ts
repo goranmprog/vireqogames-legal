@@ -1,11 +1,25 @@
 import type { NextConfig } from "next";
 
+import { putalertLegacyRedirects } from "./lib/putalert/legacyRedirects";
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return putalertLegacyRedirects;
+  },
   async headers() {
     return [
       {
-        source: "/putalert/r/:id/opengraph-image",
+        source: "/.well-known/assetlinks.json",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/json; charset=utf-8",
+          },
+        ],
+      },
+      {
+        source: "/r/:id/opengraph-image",
         headers: [
           {
             key: "Cache-Control",

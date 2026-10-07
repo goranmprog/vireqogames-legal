@@ -1,4 +1,4 @@
-import { ImageResponse } from "next/og";
+﻿import { ImageResponse } from "next/og";
 
 import { getCategoryIconKey } from "@/lib/putalert/categoryBadge";
 import { getPutalertShareFallbackOgImageUrl } from "@/lib/putalert/config";

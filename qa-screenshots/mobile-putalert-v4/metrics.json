@@ -1,0 +1,81 @@
+{
+  "m390": {
+    "viewportWidth": 390,
+    "docScrollWidth": 390,
+    "clientWidth": 390,
+    "overflowX": false,
+    "howCards": [
+      {
+        "index": 1,
+        "right": 376,
+        "width": 362,
+        "overflowsViewport": false
+      },
+      {
+        "index": 2,
+        "right": 376,
+        "width": 362,
+        "overflowsViewport": false
+      },
+      {
+        "index": 3,
+        "right": 376,
+        "width": 362,
+        "overflowsViewport": false
+      }
+    ]
+  },
+  "m430": {
+    "viewportWidth": 430,
+    "docScrollWidth": 430,
+    "clientWidth": 430,
+    "overflowX": false,
+    "howCards": [
+      {
+        "index": 1,
+        "right": 416,
+        "width": 402,
+        "overflowsViewport": false
+      },
+      {
+        "index": 2,
+        "right": 416,
+        "width": 402,
+        "overflowsViewport": false
+      },
+      {
+        "index": 3,
+        "right": 416,
+        "width": 402,
+        "overflowsViewport": false
+      }
+    ]
+  },
+  "mMenu": {
+    "viewportWidth": 390,
+    "docScrollWidth": 390,
+    "clientWidth": 390,
+    "overflowX": false,
+    "howCards": [
+      {
+        "index": 1,
+        "right": 376,
+        "width": 362,
+        "overflowsViewport": false
+      },
+      {
+        "index": 2,
+        "right": 376,
+        "width": 362,
+        "overflowsViewport": false
+      },
+      {
+        "index": 3,
+        "right": 376,
+        "width": 362,
+        "overflowsViewport": false
+      }
+    ]
+  },
+  "outDir": "D:\\VireqoGames-Legal\\qa-screenshots\\mobile-putalert-v4"
+}

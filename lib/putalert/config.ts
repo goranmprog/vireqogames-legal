@@ -1,4 +1,4 @@
-const DEFAULT_SITE_BASE_URL = "https://vireqogames-legal.vercel.app";
+const DEFAULT_SITE_BASE_URL = "https://putalert.com";
 
 export const PUTALERT_SHARE_OG_IMAGE_PATH =
   "/putalert/putalert-road-background.png";
@@ -46,7 +46,7 @@ export function getAndroidStoreUrl(): string | null {
 }
 
 export function buildPutalertSharePagePath(reportId: string): string {
-  return `/putalert/r/${reportId}`;
+  return `/r/${reportId}`;
 }
 
 export function buildPutalertSharePageUrl(reportId: string): string {

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.patrolebih.app",
+      "sha256_cert_fingerprints": [
+        "D1:93:DF:EB:1D:6F:2B:C7:59:34:60:D9:B8:15:A3:37:56:36:2B:21:41:CE:CC:4A:2C:A8:58:F2:EF:5D:52:BF",
+        "9A:50:5D:7F:DB:72:9C:1F:22:47:FD:CA:D3:63:E0:40:05:24:9D:1B:36:E2:96:3C:16:4F:D3:90:0D:07:45:28",
+        "2E:8F:B5:49:B9:D8:7F:E2:F5:7A:3F:31:14:EA:43:C5:BE:91:D3:A8:88:BB:ED:11:68:F1:97:A5:B8:2F:04:B0"
+      ]
+    }
+  }
+]

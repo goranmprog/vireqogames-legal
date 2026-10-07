@@ -26,7 +26,7 @@ export default function PutalertDeleteAccountPage() {
   return (
     <article className="container content legal-document delete-account-content">
       <nav className="breadcrumb" aria-label="Breadcrumb">
-        <Link href="/putalert">PUTALERT</Link>
+        <Link href="/">PUTALERT</Link>
       </nav>
       <header className="page-header">
         <p className="app-label">{app.name}</p>

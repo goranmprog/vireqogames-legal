@@ -9,7 +9,7 @@ export const legalConstants = {
 } as const;
 
 export const putalertLegalPaths = {
-  privacy: "/putalert/privacy",
-  terms: "/putalert/terms",
-  deleteAccount: "/putalert/delete-account",
+  privacy: "/privacy",
+  terms: "/terms",
+  deleteAccount: "/delete-account",
 } as const;

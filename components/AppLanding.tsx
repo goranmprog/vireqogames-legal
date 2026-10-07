@@ -12,9 +12,6 @@ export function AppLanding({ app }: AppLandingProps) {
 
   return (
     <article className="container content">
-      <nav className="breadcrumb" aria-label="Breadcrumb">
-        <Link href="/">VireqoGames</Link>
-      </nav>
       <header className="page-header">
         <h1>{app.name}</h1>
         <p className="lead">{app.description}</p>

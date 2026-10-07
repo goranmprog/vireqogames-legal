@@ -11,7 +11,7 @@ export function SiteLayout({ children }: SiteLayoutProps) {
       <header className="site-header">
         <div className="container header-inner">
           <Link href="/" className="site-logo">
-            VireqoGames
+            PUTALERT
           </Link>
         </div>
       </header>

@@ -22,19 +22,19 @@ const putalertLegalDocuments: LegalDocumentConfig[] = [
   {
     type: "privacy",
     title: "Politika privatnosti",
-    path: "/putalert/privacy",
+    path: "/privacy",
     placeholder: "Privacy Policy will be published here.",
   },
   {
     type: "terms",
     title: "Uslovi korištenja",
-    path: "/putalert/terms",
+    path: "/terms",
     placeholder: "Terms of Use will be published here.",
   },
   {
     type: "delete-account",
     title: "Brisanje računa",
-    path: "/putalert/delete-account",
+    path: "/delete-account",
     placeholder:
       "The account deletion request process will be defined here.",
   },

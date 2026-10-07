@@ -1,41 +1,37 @@
 import type { Metadata } from "next";
 import { LegalDocumentPage } from "@/components/LegalDocumentPage";
-import { PutalertTermsContent } from "@/lib/legal/content/putalert/terms";
+import { PutalertPrivacyContent } from "@/lib/legal/content/putalert/privacy";
 import { PUTALERT_EFFECTIVE_DATE } from "@/lib/legal/content/putalert/content-checks";
 import { putalertLegalPaths } from "@/lib/legal/constants";
 import { getApp, requireLegalDocument } from "@/lib/legal/apps";
 import { createSiteMetadata } from "@/lib/metadata";
 
 const app = getApp("putalert");
-const document = requireLegalDocument("putalert", "terms");
+const document = requireLegalDocument("putalert", "privacy");
 
 export const metadata: Metadata = createSiteMetadata({
-  title: "PUTALERT – Uslovi korištenja",
-  description: "Uslovi korištenja aplikacije PUTALERT.",
+  title: "PUTALERT – Politika privatnosti",
+  description: "Politika privatnosti aplikacije PUTALERT.",
   path: document.path,
   exactTitle: true,
 });
 
-export default function PutalertTermsPage() {
+export default function PutalertPrivacyPage() {
   return (
     <LegalDocumentPage
       appName={app.name}
-      title="Uslovi korištenja"
+      title="Politika privatnosti"
       effectiveDate={PUTALERT_EFFECTIVE_DATE}
-      backHref="/putalert"
+      backHref="/"
       backLabel="PUTALERT"
       relatedLinks={[
-        {
-          href: putalertLegalPaths.privacy,
-          label: "Politika privatnosti",
-        },
         {
           href: putalertLegalPaths.deleteAccount,
           label: "Brisanje računa",
         },
       ]}
     >
-      <PutalertTermsContent />
+      <PutalertPrivacyContent />
     </LegalDocumentPage>
   );
 }

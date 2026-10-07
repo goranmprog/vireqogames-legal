@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const siteName = "VireqoGames";
+const siteName = "PUTALERT";
 
 export function createSiteMetadata({
   title,
@@ -40,6 +40,6 @@ export function createSiteMetadata({
 
 export const siteMetadata = createSiteMetadata({
   title: siteName,
-  description: "Applications and games by VireqoGames.",
+  description: "PUTALERT — zajedno za sigurnije puteve.",
   path: "/",
 });
